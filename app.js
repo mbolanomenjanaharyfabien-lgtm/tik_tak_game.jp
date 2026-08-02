@@ -8,3 +8,18 @@ function btn() {
     player1.textContent = name_player1;
     player2.textContent = name_player2;
 }
+let valeur_tab =[
+    "O", "X"
+]
+function valeur(){
+    let reponse = Math.floor(Math.random()*valeur_tab.length);
+    document.getElementById("case1").innerHTML = valeur_tab[reponse];
+    document.getElementById("case2").innerHTML = valeur_tab[reponse];
+    document.getElementById("case3").innerHTML = valeur_tab[reponse];
+    document.getElementById("case4").innerHTML = valeur_tab[reponse];
+    document.getElementById("case5").innerHTML = valeur_tab[reponse];
+    document.getElementById("case6").innerHTML = valeur_tab[reponse];
+    document.getElementById("case7").innerHTML = valeur_tab[reponse];
+    document.getElementById("case8").innerHTML = valeur_tab[reponse];
+    document.getElementById("case9").innerHTML = valeur_tab[reponse];
+}
