@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tik tak</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="title">
+        <h1>Jeux Tik Tak Toe</h1>
+        <div class="form">
+            <div class="input_name1">
+                <label for="">Joueur1</label>
+                <input type="text" id="name_player1" placeholder="Nom de joueur1">
+            </div>
+            <div class="input_name1">
+                <label for="">joueur2</label>
+                <input type="text" id="name_player2" placeholder="Nom de joueur2">
+            </div>
+        </div>
+        <div>
+            <button id="commencer" onclick="btn()">Jouer</button>
+        </div>
+        <div id="player_name">
+        </div>
+    </div>
+    <div class="grid">
+        <div id="case1" class="tab"></div>
+        <div id="case2" class="tab"></div>
+        <div id="case3" class="tab"></div>
+        <div id="case4" class="tab"></div>
+        <div id="case5" class="tab"></div>
+        <div id="case6" class="tab"></div>
+        <div id="case7" class="tab"></div>
+        <div id="case8" class="tab"></div>
+        <div id="case9" class="tab"></div>
+    </div>
+    <div class="foot">
+        <h2>Tours de <span class="turn_palyer"></span> </h2>
+        <p>Score de <span id="player1"></span> :  </p>
+        <p>Score de <span id="player2"></span> :  </p>
+    </div>
+    
+</body>
+</html>
