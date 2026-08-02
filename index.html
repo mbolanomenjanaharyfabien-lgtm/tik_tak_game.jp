@@ -20,9 +20,14 @@
                 <input type="text" id="name_player2" placeholder="Nom de joueur2">
             </div>
         </div>
+        <div class="choix">
+            <p>Choisir un Bouton</p>
+            <input type="submit" id="chose" class="choix_btn" onclick="choix()" value="O">
+            <input type="submit" id="chose2" class="choix_btn" onclick="choix2()" value="X">
+        </div>
         <div class="btn">
-            <button id="commencer" onclick="btn()">Commencer</button>
-            <button id="commencer" onclick="btn2()">Recommencer</button>
+            <button id="commencer"  onclick="btn()">Commencer</button>
+            <button id="commencer"  onclick="btn2()">Recommencer</button>
         </div>
         <div id="player_name">
         </div>
@@ -39,7 +44,6 @@
         <div id="case9" onclick="valeur9()" class="tab"></div>
     </div>
     <div class="foot">
-        <h2>Tours de <span class="turn_palyer"></span> </h2>
         <p>Score de <span id="player1"></span> :  </p>
         <p>Score de <span id="player2"></span> :  </p>
     </div>

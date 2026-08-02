@@ -35,13 +35,24 @@ input{
     display: flex;
     gap: 2rem;
 }
+.choix{
+    gap: 10rem;
+}
+.choix_btn{
+    margin-top: 2vh;
+     padding: 1vh 4vh;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: 2px solid grey;
+    height: 2rem;
+    cursor: pointer;
+}
 #commencer {
     padding: 1vh 4vh;
     border-radius: 5px;
     font-size: 1rem;
     border: 2px solid grey;
     height: 2rem;
-    
     cursor: pointer;
 }
 .grid{

@@ -22,69 +22,80 @@ function btn2() {
     document.getElementById("player1").textContent = "";
     document.getElementById("player2").textContent = "";
     document.getElementById("player_name").textContent = "";
+    document.getElementById("case1").textContent = "";
+    document.getElementById("case2").textContent = "";
+    document.getElementById("case3").textContent = "";
+    document.getElementById("case4").textContent = "";
+    document.getElementById("case5").textContent = "";
+    document.getElementById("case6").textContent = "";
+    document.getElementById("case7").textContent = "";
+    document.getElementById("case8").textContent = "";
+    document.getElementById("case9").textContent = "";
     
 }
-let valeur_tab1 =[
-    "O", "X", "O", "X", "O", "X","O", "X", "O", "X"
-]
-let reponse1 = Math.floor(Math.random()*valeur_tab1.length);
+let tour = "";
+
+function choix(){
+    tour = document.getElementById("chose").value;
+}
+function choix2(){
+    tour = document.getElementById("chose2").value;
+}
+
 function valeur1(){
-    let reponse1 = Math.floor(Math.random()*valeur_tab1.length);
-    document.getElementById("case1").innerHTML = valeur_tab1[reponse1];
+    document.getElementById("case1").innerHTML = tour;
+    tour = (tour === "X")? "O":"X";
 }
+
 function valeur2(){
-    let reponse1 = Math.floor(Math.random()*valeur_tab1.length);
-    document.getElementById("case2").innerHTML = valeur_tab1[reponse1];
+    document.getElementById("case2").innerHTML = tour;
+    tour = (tour === "X")? "O":"X";
 }
+
 function valeur3(){
-    let reponse1 = Math.floor(Math.random()*valeur_tab1.length);
-    document.getElementById("case3").innerHTML = valeur_tab1[reponse1];
+    document.getElementById("case3").innerHTML = tour;
+    tour = (tour === "X")? "O":"X";
 }
+
 function valeur4(){
-    let reponse1 = Math.floor(Math.random()*valeur_tab1.length);
-    document.getElementById("case4").innerHTML = valeur_tab1[reponse1];
+    document.getElementById("case4").innerHTML = tour;
+    tour = (tour === "X")? "O":"X";
 }
+
 function valeur5(){
-    let reponse1 = Math.floor(Math.random()*valeur_tab1.length);
-    document.getElementById("case5").innerHTML = valeur_tab1[reponse1];
+    document.getElementById("case5").innerHTML = tour;
+    tour = (tour === "X")? "O":"X";
 }
+
 function valeur6(){
-    let reponse1 = Math.floor(Math.random()*valeur_tab1.length);
-    document.getElementById("case6").innerHTML = valeur_tab1[reponse1];
+    document.getElementById("case6").innerHTML = tour;
+    tour = (tour === "X")? "O":"X";
 }
+
 function valeur7(){
-    let reponse1 = Math.floor(Math.random()*valeur_tab1.length);
-    document.getElementById("case7").innerHTML = valeur_tab1[reponse1];
+    document.getElementById("case7").innerHTML = tour;
+    tour = (tour === "X")? "O":"X";
 }
+
 function valeur8(){
-    let reponse1 = Math.floor(Math.random()*valeur_tab1.length);
-    document.getElementById("case8").innerHTML = valeur_tab1[reponse1];
+    document.getElementById("case8").innerHTML = tour;
+    tour = (tour === "X")? "O":"X";
 }
+
 function valeur9(){
-    let reponse1 = Math.floor(Math.random()*valeur_tab1.length);
-    document.getElementById("case9").innerHTML = valeur_tab1[reponse1];
+    document.getElementById("case9").innerHTML = tour;
+    tour = (tour === "X")? "O":"X";
 }
-    // let valeur_tab2 =[
-    //     "X", "O"
-    // ]
-    // let valeur_tab3 =[
-    //     "O", "X"
-    // ]
-    // let valeur_tab4 =[
-    //     "X", "O"
-    // ]
-    // let valeur_tab5 =[
-    //     "O", "X"
-    // ]
-    // let valeur_tab6 =[
-    //     "X", "O"
-    // ]
-    // let valeur_tab7 =[
-    //     "O", "X"
-    // ]
-    // let valeur_tab8 =[
-    //     "X", "O"
-    // ]
-    // let valeur_tab9 =[
-    //     "O", "X"
-    // ]
+let case1 = document.getElementById("case1").textContent;
+let case2 = document.getElementById("case2").textContent;
+let case3 = document.getElementById("case3").textContent;
+let case4 = document.getElementById("case4").textContent;
+let case5 = document.getElementById("case5").textContent;
+let case6 = document.getElementById("case6").textContent;
+let case7 = document.getElementById("case7").textContent;
+let case8 = document.getElementById("case8").textContent;
+let case9 = document.getElementById("case9").textContent;
+function win(){
+    if(case1 ==="O" && case2 == "O" && case2 == "O")
+    alert('you win');
+}
