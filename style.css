@@ -59,7 +59,7 @@ input{
     border: 2px solid rgb(183, 176, 176);
     /* margin: auto 0; */
 }
-@media (max-width:350px){
+@media (max-width:430px){
     .form{
     display: flex;
     flex-direction: column;
