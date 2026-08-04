@@ -1,3 +1,41 @@
+function sombre(){
+    document.body.style.background = "black";
+    document.body.style.color = "white";
+    document.getElementById("name_player1").style.background ="none";
+    document.getElementById("name_player1").style.border ="2px solid white";
+    document.getElementById("name_player2").style.background ="none";
+    document.getElementById("name_player2").style.border ="2px solid white";
+    document.getElementById("chose").style.border ="2px solid white";
+    document.getElementById("chose").style.color ="white";
+    document.getElementById("chose").style.background ="black";
+    document.getElementById("chose2").style.background ="black";
+    document.getElementById("chose2").style.border ="2px solid white";
+    document.getElementById("chose2").style.color ="white";
+    document.getElementById("mode3").style.display ="block";
+    document.getElementById("mode2").style.background ="transparent";
+    document.getElementById("mode2").style.transition ="0.3s";
+}
+function clair(){
+    document.body.style.background = "";
+    document.body.style.color = "";
+    document.getElementById("name_player1").style.background ="";
+    document.getElementById("name_player1").style.border ="";
+    document.getElementById("name_player2").style.background ="";
+    document.getElementById("name_player2").style.border ="";
+    document.getElementById("chose").style.border ="";
+    document.getElementById("chose").style.color ="";
+    document.getElementById("chose").style.background ="";
+    document.getElementById("chose2").style.background ="";
+    document.getElementById("chose2").style.border ="";
+    document.getElementById("chose2").style.color ="";
+    document.getElementById("mode3").style.display ="none";
+    document.getElementById("mode2").style.display ="block";
+    document.getElementById("mode2").style.background ="grey";
+    document.getElementById("mode2").style.transition ="0.3s";
+}
+
+
+
 function btn() {
     let name_player1 = document.getElementById("name_player1").value;
     let name_player2 = document.getElementById("name_player2").value;

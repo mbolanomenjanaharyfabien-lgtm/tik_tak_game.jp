@@ -11,6 +11,34 @@ body{
     margin: 2rem;
     font-family: sans-serif;
 }
+.barrenav{
+    display: flex;
+    gap: 2rem;
+}
+.mode1{
+    background: rgb(241, 231, 231);
+    border-radius: 20px;
+    display: flex;
+    gap: 2rem;
+    padding: 5px;
+    width: 10vh;
+    height: 3vh;
+}
+#mode2{
+    background: grey;
+    width: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 2vh;
+}
+#mode3{
+    background: gray;
+    width: 20px;
+    border-radius: 50%;
+    height: 2vh;
+    cursor: pointer;
+    display: none;
+}
 .title{
     display: flex;
     flex-direction: column;
@@ -72,7 +100,9 @@ input{
     font-size: 3rem;
     cursor: pointer;
     border-radius: 10px;
-    border: 2px solid rgb(183, 176, 176);
+    border: none;
+    /* border: 2px solid rgb(183, 176, 176); */
+    box-shadow: inset 5px 5px 10px rgb(163, 159, 159),inset -5px -5px 10px rgb(228, 222, 222);
     /* margin: auto 0; */
 }
 .lien{
