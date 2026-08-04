@@ -34,8 +34,6 @@ function clair(){
     document.getElementById("mode2").style.transition ="0.3s";
 }
 
-
-
 function btn() {
     let name_player1 = document.getElementById("name_player1").value;
     let name_player2 = document.getElementById("name_player2").value;
@@ -72,7 +70,6 @@ function btn2() {
     
 }
 let tour = "";
-
 function choix(){
     tour = document.getElementById("chose").value;
 }
@@ -82,58 +79,422 @@ function choix2(){
 
 function valeur1(){
     document.getElementById("case1").innerHTML = tour;
+    let name_player1 = document.getElementById("name_player1").value;
+    let name_player2 = document.getElementById("name_player2").value;
+    let case1 = document.getElementById("case1").textContent;
+    let case2 = document.getElementById("case2").textContent;
+    let case3 = document.getElementById("case3").textContent;
+    let case4 = document.getElementById("case4").textContent;
+    let case5 = document.getElementById("case5").textContent;
+    let case6 = document.getElementById("case6").textContent;
+    let case7 = document.getElementById("case7").textContent;
+    let case8 = document.getElementById("case8").textContent;
+    let case9 = document.getElementById("case9").textContent;
+    if( (case1 === "O" && case2 === "O" && case3 === "O" || 
+        case4 === "O" && case5 === "O" && case6 === "O" || 
+        case1 === "O" && case4 === "O" && case7 === "O" ||
+        case2 === "O" && case5 === "O" && case8 === "O" ||
+        case3 === "O" && case6 === "O" && case9 === "O" ||
+        case7 === "O" && case8 === "O" && case9 === "O" ||
+        case1 === "O" && case5 === "O" && case9 === "O" ||
+        case3 === "O" && case5 === "O" && case7 === "O")) 
+    {
+        let debut_score = document.getElementById("deb_score1");
+        let debut_score_number = Number(debut_score.textContent);
+        debut_score.textContent = debut_score_number + 1;
+        alert(name_player1 + " à gagner");
+        return;
+    }
+    else if( (case1 === "X" && case2 === "X" && case3 === "X" || 
+        case4 === "X" && case5 === "X" && case6 === "X" || 
+        case1 === "X" && case4 === "X" && case7 === "X" ||
+        case2 === "X" && case5 === "X" && case8 === "X" ||
+        case3 === "X" && case6 === "X" && case9 === "X" ||
+        case7 === "X" && case8 === "X" && case9 === "X" ||
+        case1 === "X" && case5 === "X" && case9 === "X" ||
+        case3 === "X" && case5 === "X" && case7 === "X")) 
+    {
+        let debut_score2 = document.getElementById("deb_score2");
+        let debut_score_number2 = Number(debut_score2.textContent);
+        debut_score2.textContent = debut_score_number2 + 1;
+        return;
+        alert(name_player2 + " à gagner");
+    }
     tour = (tour === "X")? "O":"X";
 }
 
 function valeur2(){
     document.getElementById("case2").innerHTML = tour;
+    let name_player1 = document.getElementById("name_player1").value;
+    let name_player2 = document.getElementById("name_player2").value;
+    let case1 = document.getElementById("case1").textContent;
+    let case2 = document.getElementById("case2").textContent;
+    let case3 = document.getElementById("case3").textContent;
+    let case4 = document.getElementById("case4").textContent;
+    let case5 = document.getElementById("case5").textContent;
+    let case6 = document.getElementById("case6").textContent;
+    let case7 = document.getElementById("case7").textContent;
+    let case8 = document.getElementById("case8").textContent;
+    let case9 = document.getElementById("case9").textContent;
+    if( (case1 === "O" && case2 === "O" && case3 === "O" || 
+        case4 === "O" && case5 === "O" && case6 === "O" || 
+        case1 === "O" && case4 === "O" && case7 === "O" ||
+        case2 === "O" && case5 === "O" && case8 === "O" ||
+        case3 === "O" && case6 === "O" && case9 === "O" ||
+        case7 === "O" && case8 === "O" && case9 === "O" ||
+        case1 === "O" && case5 === "O" && case9 === "O" ||
+        case3 === "O" && case5 === "O" && case7 === "O")) 
+    {
+        let debut_score = document.getElementById("deb_score1");
+        let debut_score_number = Number(debut_score.textContent);
+        debut_score.textContent = debut_score_number + 1;
+        alert(name_player1 + " à gagner");
+        return;
+    }
+    else if( (case1 === "X" && case2 === "X" && case3 === "X" || 
+        case4 === "X" && case5 === "X" && case6 === "X" || 
+        case1 === "X" && case4 === "X" && case7 === "X" ||
+        case2 === "X" && case5 === "X" && case8 === "X" ||
+        case3 === "X" && case6 === "X" && case9 === "X" ||
+        case7 === "X" && case8 === "X" && case9 === "X" ||
+        case1 === "X" && case5 === "X" && case9 === "X" ||
+        case3 === "X" && case5 === "X" && case7 === "X")) 
+    {
+        let debut_score2 = document.getElementById("deb_score2");
+        let debut_score_number2 = Number(debut_score2.textContent);
+        debut_score2.textContent = debut_score_number2 + 1;
+        return;
+        alert(name_player2 + " à gagner");
+    }
+
     tour = (tour === "X")? "O":"X";
 }
 
 function valeur3(){
     document.getElementById("case3").innerHTML = tour;
+    let name_player1 = document.getElementById("name_player1").value;
+    let name_player2 = document.getElementById("name_player2").value;
+    let case1 = document.getElementById("case1").textContent;
+    let case2 = document.getElementById("case2").textContent;
+    let case3 = document.getElementById("case3").textContent;
+    let case4 = document.getElementById("case4").textContent;
+    let case5 = document.getElementById("case5").textContent;
+    let case6 = document.getElementById("case6").textContent;
+    let case7 = document.getElementById("case7").textContent;
+    let case8 = document.getElementById("case8").textContent;
+    let case9 = document.getElementById("case9").textContent;
+    if( (case1 === "O" && case2 === "O" && case3 === "O" || 
+        case4 === "O" && case5 === "O" && case6 === "O" || 
+        case1 === "O" && case4 === "O" && case7 === "O" ||
+        case2 === "O" && case5 === "O" && case8 === "O" ||
+        case3 === "O" && case6 === "O" && case9 === "O" ||
+        case7 === "O" && case8 === "O" && case9 === "O" ||
+        case1 === "O" && case5 === "O" && case9 === "O" ||
+        case3 === "O" && case5 === "O" && case7 === "O")) 
+    {
+        let debut_score = document.getElementById("deb_score1");
+        let debut_score_number = Number(debut_score.textContent);
+        debut_score.textContent = debut_score_number + 1;
+        alert(name_player1 + " à gagner");
+        return;
+    }
+    else if( (case1 === "X" && case2 === "X" && case3 === "X" || 
+        case4 === "X" && case5 === "X" && case6 === "X" || 
+        case1 === "X" && case4 === "X" && case7 === "X" ||
+        case2 === "X" && case5 === "X" && case8 === "X" ||
+        case3 === "X" && case6 === "X" && case9 === "X" ||
+        case7 === "X" && case8 === "X" && case9 === "X" ||
+        case1 === "X" && case5 === "X" && case9 === "X" ||
+        case3 === "X" && case5 === "X" && case7 === "X")) 
+    {
+        let debut_score2 = document.getElementById("deb_score2");
+        let debut_score_number2 = Number(debut_score2.textContent);
+        debut_score2.textContent = debut_score_number2 + 1;
+        return;
+        alert(name_player2 + " à gagner");
+    }
+
     tour = (tour === "X")? "O":"X";
 }
 
 function valeur4(){
     document.getElementById("case4").innerHTML = tour;
+    let name_player1 = document.getElementById("name_player1").value;
+    let name_player2 = document.getElementById("name_player2").value;
+    let case1 = document.getElementById("case1").textContent;
+    let case2 = document.getElementById("case2").textContent;
+    let case3 = document.getElementById("case3").textContent;
+    let case4 = document.getElementById("case4").textContent;
+    let case5 = document.getElementById("case5").textContent;
+    let case6 = document.getElementById("case6").textContent;
+    let case7 = document.getElementById("case7").textContent;
+    let case8 = document.getElementById("case8").textContent;
+    let case9 = document.getElementById("case9").textContent;
+    if( (case1 === "O" && case2 === "O" && case3 === "O" || 
+        case4 === "O" && case5 === "O" && case6 === "O" || 
+        case1 === "O" && case4 === "O" && case7 === "O" ||
+        case2 === "O" && case5 === "O" && case8 === "O" ||
+        case3 === "O" && case6 === "O" && case9 === "O" ||
+        case7 === "O" && case8 === "O" && case9 === "O" ||
+        case1 === "O" && case5 === "O" && case9 === "O" ||
+        case3 === "O" && case5 === "O" && case7 === "O")) 
+    {
+        let debut_score = document.getElementById("deb_score1");
+        let debut_score_number = Number(debut_score.textContent);
+        debut_score.textContent = debut_score_number + 1;
+        alert(name_player1 + " à gagner");
+        return;
+    }
+    else if( (case1 === "X" && case2 === "X" && case3 === "X" || 
+        case4 === "X" && case5 === "X" && case6 === "X" || 
+        case1 === "X" && case4 === "X" && case7 === "X" ||
+        case2 === "X" && case5 === "X" && case8 === "X" ||
+        case3 === "X" && case6 === "X" && case9 === "X" ||
+        case7 === "X" && case8 === "X" && case9 === "X" ||
+        case1 === "X" && case5 === "X" && case9 === "X" ||
+        case3 === "X" && case5 === "X" && case7 === "X")) 
+    {
+        let debut_score2 = document.getElementById("deb_score2");
+        let debut_score_number2 = Number(debut_score2.textContent);
+        debut_score2.textContent = debut_score_number2 + 1;
+        return;
+        alert(name_player2 + " à gagner");
+    }
+
     tour = (tour === "X")? "O":"X";
 }
 
 function valeur5(){
     document.getElementById("case5").innerHTML = tour;
+    let name_player1 = document.getElementById("name_player1").value;
+    let name_player2 = document.getElementById("name_player2").value;
+    let case1 = document.getElementById("case1").textContent;
+    let case2 = document.getElementById("case2").textContent;
+    let case3 = document.getElementById("case3").textContent;
+    let case4 = document.getElementById("case4").textContent;
+    let case5 = document.getElementById("case5").textContent;
+    let case6 = document.getElementById("case6").textContent;
+    let case7 = document.getElementById("case7").textContent;
+    let case8 = document.getElementById("case8").textContent;
+    let case9 = document.getElementById("case9").textContent;
+    if( (case1 === "O" && case2 === "O" && case3 === "O" || 
+        case4 === "O" && case5 === "O" && case6 === "O" || 
+        case1 === "O" && case4 === "O" && case7 === "O" ||
+        case2 === "O" && case5 === "O" && case8 === "O" ||
+        case3 === "O" && case6 === "O" && case9 === "O" ||
+        case7 === "O" && case8 === "O" && case9 === "O" ||
+        case1 === "O" && case5 === "O" && case9 === "O" ||
+        case3 === "O" && case5 === "O" && case7 === "O")) 
+    {
+        let debut_score = document.getElementById("deb_score1");
+        let debut_score_number = Number(debut_score.textContent);
+        debut_score.textContent = debut_score_number + 1;
+        alert(name_player1 + " à gagner");
+        return;
+    }
+    else if( (case1 === "X" && case2 === "X" && case3 === "X" || 
+        case4 === "X" && case5 === "X" && case6 === "X" || 
+        case1 === "X" && case4 === "X" && case7 === "X" ||
+        case2 === "X" && case5 === "X" && case8 === "X" ||
+        case3 === "X" && case6 === "X" && case9 === "X" ||
+        case7 === "X" && case8 === "X" && case9 === "X" ||
+        case1 === "X" && case5 === "X" && case9 === "X" ||
+        case3 === "X" && case5 === "X" && case7 === "X")) 
+    {
+        let debut_score2 = document.getElementById("deb_score2");
+        let debut_score_number2 = Number(debut_score2.textContent);
+        debut_score2.textContent = debut_score_number2 + 1;
+        return;
+        alert(name_player2 + " à gagner");
+    }
+
     tour = (tour === "X")? "O":"X";
 }
 
 function valeur6(){
     document.getElementById("case6").innerHTML = tour;
+    let name_player1 = document.getElementById("name_player1").value;
+    let name_player2 = document.getElementById("name_player2").value;
+    let case1 = document.getElementById("case1").textContent;
+    let case2 = document.getElementById("case2").textContent;
+    let case3 = document.getElementById("case3").textContent;
+    let case4 = document.getElementById("case4").textContent;
+    let case5 = document.getElementById("case5").textContent;
+    let case6 = document.getElementById("case6").textContent;
+    let case7 = document.getElementById("case7").textContent;
+    let case8 = document.getElementById("case8").textContent;
+    let case9 = document.getElementById("case9").textContent;
+    if( (case1 === "O" && case2 === "O" && case3 === "O" || 
+        case4 === "O" && case5 === "O" && case6 === "O" || 
+        case1 === "O" && case4 === "O" && case7 === "O" ||
+        case2 === "O" && case5 === "O" && case8 === "O" ||
+        case3 === "O" && case6 === "O" && case9 === "O" ||
+        case7 === "O" && case8 === "O" && case9 === "O" ||
+        case1 === "O" && case5 === "O" && case9 === "O" ||
+        case3 === "O" && case5 === "O" && case7 === "O")) 
+    {
+        let debut_score = document.getElementById("deb_score1");
+        let debut_score_number = Number(debut_score.textContent);
+        debut_score.textContent = debut_score_number + 1;
+        alert(name_player1 + " à gagner");
+        return;
+    }
+    else if( (case1 === "X" && case2 === "X" && case3 === "X" || 
+        case4 === "X" && case5 === "X" && case6 === "X" || 
+        case1 === "X" && case4 === "X" && case7 === "X" ||
+        case2 === "X" && case5 === "X" && case8 === "X" ||
+        case3 === "X" && case6 === "X" && case9 === "X" ||
+        case7 === "X" && case8 === "X" && case9 === "X" ||
+        case1 === "X" && case5 === "X" && case9 === "X" ||
+        case3 === "X" && case5 === "X" && case7 === "X")) 
+    {
+        let debut_score2 = document.getElementById("deb_score2");
+        let debut_score_number2 = Number(debut_score2.textContent);
+        debut_score2.textContent = debut_score_number2 + 1;
+        return;
+        alert(name_player2 + " à gagner");
+    }
+
     tour = (tour === "X")? "O":"X";
 }
 
 function valeur7(){
     document.getElementById("case7").innerHTML = tour;
+    let name_player1 = document.getElementById("name_player1").value;
+    let name_player2 = document.getElementById("name_player2").value;
+    let case1 = document.getElementById("case1").textContent;
+    let case2 = document.getElementById("case2").textContent;
+    let case3 = document.getElementById("case3").textContent;
+    let case4 = document.getElementById("case4").textContent;
+    let case5 = document.getElementById("case5").textContent;
+    let case6 = document.getElementById("case6").textContent;
+    let case7 = document.getElementById("case7").textContent;
+    let case8 = document.getElementById("case8").textContent;
+    let case9 = document.getElementById("case9").textContent;
+    if( (case1 === "O" && case2 === "O" && case3 === "O" || 
+        case4 === "O" && case5 === "O" && case6 === "O" || 
+        case1 === "O" && case4 === "O" && case7 === "O" ||
+        case2 === "O" && case5 === "O" && case8 === "O" ||
+        case3 === "O" && case6 === "O" && case9 === "O" ||
+        case7 === "O" && case8 === "O" && case9 === "O" ||
+        case1 === "O" && case5 === "O" && case9 === "O" ||
+        case3 === "O" && case5 === "O" && case7 === "O")) 
+    {
+        let debut_score = document.getElementById("deb_score1");
+        let debut_score_number = Number(debut_score.textContent);
+        debut_score.textContent = debut_score_number + 1;
+        alert(name_player1 + " à gagner");
+        return;
+    }
+    else if( (case1 === "X" && case2 === "X" && case3 === "X" || 
+        case4 === "X" && case5 === "X" && case6 === "X" || 
+        case1 === "X" && case4 === "X" && case7 === "X" ||
+        case2 === "X" && case5 === "X" && case8 === "X" ||
+        case3 === "X" && case6 === "X" && case9 === "X" ||
+        case7 === "X" && case8 === "X" && case9 === "X" ||
+        case1 === "X" && case5 === "X" && case9 === "X" ||
+        case3 === "X" && case5 === "X" && case7 === "X")) 
+    {
+        let debut_score2 = document.getElementById("deb_score2");
+        let debut_score_number2 = Number(debut_score2.textContent);
+        debut_score2.textContent = debut_score_number2 + 1;
+        return;
+        alert(name_player2 + " à gagner");
+    }
+
     tour = (tour === "X")? "O":"X";
 }
 
 function valeur8(){
     document.getElementById("case8").innerHTML = tour;
+    let name_player1 = document.getElementById("name_player1").value;
+    let name_player2 = document.getElementById("name_player2").value;
+    let case1 = document.getElementById("case1").textContent;
+    let case2 = document.getElementById("case2").textContent;
+    let case3 = document.getElementById("case3").textContent;
+    let case4 = document.getElementById("case4").textContent;
+    let case5 = document.getElementById("case5").textContent;
+    let case6 = document.getElementById("case6").textContent;
+    let case7 = document.getElementById("case7").textContent;
+    let case8 = document.getElementById("case8").textContent;
+    let case9 = document.getElementById("case9").textContent;
+    if( (case1 === "O" && case2 === "O" && case3 === "O" || 
+        case4 === "O" && case5 === "O" && case6 === "O" || 
+        case1 === "O" && case4 === "O" && case7 === "O" ||
+        case2 === "O" && case5 === "O" && case8 === "O" ||
+        case3 === "O" && case6 === "O" && case9 === "O" ||
+        case7 === "O" && case8 === "O" && case9 === "O" ||
+        case1 === "O" && case5 === "O" && case9 === "O" ||
+        case3 === "O" && case5 === "O" && case7 === "O")) 
+    {
+        let debut_score = document.getElementById("deb_score1");
+        let debut_score_number = Number(debut_score.textContent);
+        debut_score.textContent = debut_score_number + 1;
+        alert(name_player1 + " à gagner");
+        return;
+    }
+    else if( (case1 === "X" && case2 === "X" && case3 === "X" || 
+        case4 === "X" && case5 === "X" && case6 === "X" || 
+        case1 === "X" && case4 === "X" && case7 === "X" ||
+        case2 === "X" && case5 === "X" && case8 === "X" ||
+        case3 === "X" && case6 === "X" && case9 === "X" ||
+        case7 === "X" && case8 === "X" && case9 === "X" ||
+        case1 === "X" && case5 === "X" && case9 === "X" ||
+        case3 === "X" && case5 === "X" && case7 === "X")) 
+    {
+        let debut_score2 = document.getElementById("deb_score2");
+        let debut_score_number2 = Number(debut_score2.textContent);
+        debut_score2.textContent = debut_score_number2 + 1;
+        return;
+        alert(name_player2 + " à gagner");
+    }
+
     tour = (tour === "X")? "O":"X";
 }
 
 function valeur9(){
     document.getElementById("case9").innerHTML = tour;
+    let name_player1 = document.getElementById("name_player1").value;
+    let name_player2 = document.getElementById("name_player2").value;
+    let case1 = document.getElementById("case1").textContent;
+    let case2 = document.getElementById("case2").textContent;
+    let case3 = document.getElementById("case3").textContent;
+    let case4 = document.getElementById("case4").textContent;
+    let case5 = document.getElementById("case5").textContent;
+    let case6 = document.getElementById("case6").textContent;
+    let case7 = document.getElementById("case7").textContent;
+    let case8 = document.getElementById("case8").textContent;
+    let case9 = document.getElementById("case9").textContent;
+    if( (case1 === "O" && case2 === "O" && case3 === "O" || 
+        case4 === "O" && case5 === "O" && case6 === "O" || 
+        case1 === "O" && case4 === "O" && case7 === "O" ||
+        case2 === "O" && case5 === "O" && case8 === "O" ||
+        case3 === "O" && case6 === "O" && case9 === "O" ||
+        case7 === "O" && case8 === "O" && case9 === "O" ||
+        case1 === "O" && case5 === "O" && case9 === "O" ||
+        case3 === "O" && case5 === "O" && case7 === "O")) 
+    {
+        let debut_score = document.getElementById("deb_score1");
+        let debut_score_number = Number(debut_score.textContent);
+        debut_score.textContent = debut_score_number + 1;
+        alert(name_player1 + " à gagner");
+        return;
+    }
+    else if( (case1 === "X" && case2 === "X" && case3 === "X" || 
+        case4 === "X" && case5 === "X" && case6 === "X" || 
+        case1 === "X" && case4 === "X" && case7 === "X" ||
+        case2 === "X" && case5 === "X" && case8 === "X" ||
+        case3 === "X" && case6 === "X" && case9 === "X" ||
+        case7 === "X" && case8 === "X" && case9 === "X" ||
+        case1 === "X" && case5 === "X" && case9 === "X" ||
+        case3 === "X" && case5 === "X" && case7 === "X")) 
+    {
+        let debut_score2 = document.getElementById("deb_score2");
+        let debut_score_number2 = Number(debut_score2.textContent);
+        debut_score2.textContent = debut_score_number2 + 1;
+        return;
+        alert(name_player2 + " à gagner");
+    }
+
     tour = (tour === "X")? "O":"X";
-}
-let case1 = document.getElementById("case1").textContent;
-let case2 = document.getElementById("case2").textContent;
-let case3 = document.getElementById("case3").textContent;
-let case4 = document.getElementById("case4").textContent;
-let case5 = document.getElementById("case5").textContent;
-let case6 = document.getElementById("case6").textContent;
-let case7 = document.getElementById("case7").textContent;
-let case8 = document.getElementById("case8").textContent;
-let case9 = document.getElementById("case9").textContent;
-function win(){
-    if(case1 ==="O" && case2 == "O" && case2 == "O")
-    alert('you win');
 }
