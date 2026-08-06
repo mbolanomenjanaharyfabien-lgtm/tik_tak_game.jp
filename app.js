@@ -6,7 +6,9 @@ function sombre(){
     document.getElementById("name_player2").style.background ="none";
     document.getElementById("commencer").style.background ="tansparent";
     document.getElementById("commencer").style.color ="white";
+    document.getElementById("continuer").style.color ="white"
     document.getElementById("commencer").style.borderColor ="white";
+    document.getElementById("continuer").style.borderColor ="white";
     document.getElementById("recommencer").style.background ="transparent";
     document.getElementById("recommencer").style.color ="white";
     document.getElementById("recommencer").style.borderColor ="white";
@@ -26,6 +28,12 @@ function clair(){
     document.body.style.background = "";
     document.body.style.color = "";
     document.getElementById("name_player1").style.background ="";
+    document.getElementById("commencer").style.color ="";
+    document.getElementById("commencer").style.borderColor ="";
+    document.getElementById("continuer").style.color ="";
+    document.getElementById("continuer").style.borderColor ="";
+    document.getElementById("recommencer").style.color ="";
+    document.getElementById("recommencer").style.borderColor ="";
     document.getElementById("mode").style.background ="";
     document.getElementById("name_player1").style.border ="";
     document.getElementById("name_player2").style.background ="";
@@ -44,7 +52,7 @@ function clair(){
     document.getElementById("mode2").style.transition ="0.3s";
 }
 
-function btn() {
+function commencer() {
     let name_player1 = document.getElementById("name_player1").value;
     let name_player2 = document.getElementById("name_player2").value;
     let player1 = document.getElementById("player1");
@@ -62,12 +70,26 @@ function btn() {
     }
     
 }
-function btn2() {
+function recommencer() {
     document.getElementById("name_player1").value = "";
     document.getElementById("name_player2").value = "";
     document.getElementById("player1").textContent = "";
     document.getElementById("player2").textContent = "";
     document.getElementById("player_name").textContent = "";
+    document.getElementById("case1").textContent = "";
+    document.getElementById("case2").textContent = "";
+    document.getElementById("case3").textContent = "";
+    document.getElementById("case4").textContent = "";
+    document.getElementById("case5").textContent = "";
+    document.getElementById("case6").textContent = "";
+    document.getElementById("case7").textContent = "";
+    document.getElementById("case8").textContent = "";
+    document.getElementById("case9").textContent = "";
+    document.getElementById("deb_score1").textContent ="";
+    document.getElementById("deb_score2").textContent ="";
+    
+}
+function continuer() {
     document.getElementById("case1").textContent = "";
     document.getElementById("case2").textContent = "";
     document.getElementById("case3").textContent = "";

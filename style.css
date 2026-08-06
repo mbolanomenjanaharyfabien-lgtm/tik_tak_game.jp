@@ -87,6 +87,17 @@ input:hover{
 .btn_choix{
     font-weight: bold;
 }
+#continuer {
+    font-weight: bold;
+    padding: 1vh 4vh;
+    border-radius: 5px;
+    background: transparent;
+    font-size: 1rem;
+    border: 2px solid grey;
+    height: 2rem;
+    color: grey;
+    cursor: pointer;
+}
 #commencer {
     font-weight: bold;
     padding: 1vh 4vh;
