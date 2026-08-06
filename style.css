@@ -6,6 +6,7 @@
 body{
     display: flex;
     flex-direction: column;
+    background: rgb(39, 58, 72);
     align-items: center;
     justify-content: center;
     margin: 2rem;
@@ -16,7 +17,7 @@ body{
     gap: 2rem;
 }
 .mode1{
-    background: rgb(241, 231, 231);
+    background: rgb(28, 28, 28);
     border-radius: 20px;
     display: flex;
     gap: 2rem;
@@ -51,13 +52,21 @@ body{
 label{
     display: block;
     margin: 1rem auto;
+    font-weight: bold;
 }
 input{
     height: 5vh;
     border: 2px solid grey;
+    color: grey;
+    background: transparent;
     border-radius: 5px;
     padding: 1px 10px;
+    transition: 2s;
     font-size: 1rem;
+    cursor: pointer;
+}
+input:hover{
+    
 }
 .btn{
     display: flex;
@@ -75,9 +84,26 @@ input{
     height: 2rem;
     cursor: pointer;
 }
+.btn_choix{
+    font-weight: bold;
+}
 #commencer {
+    font-weight: bold;
     padding: 1vh 4vh;
     border-radius: 5px;
+    background: transparent;
+    font-size: 1rem;
+    border: 2px solid grey;
+    height: 2rem;
+    color: grey;
+    cursor: pointer;
+}
+#recommencer {
+    color: grey;
+    font-weight: bold;
+    padding: 1vh 4vh;
+    border-radius: 5px;
+    background: transparent;
     font-size: 1rem;
     border: 2px solid grey;
     height: 2rem;
@@ -91,19 +117,18 @@ input{
     padding: 2rem;
     margin: 3rem auto;
     border-radius: 10px;
-    border: 2px solid rgb(183, 176, 176);
+    border: 5px solid grey;
 }
 .tab{
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-top: 5px;
     font-size: 3rem;
     cursor: pointer;
     border-radius: 10px;
     border: none;
-    /* border: 2px solid rgb(183, 176, 176); */
-    box-shadow: inset 5px 5px 10px rgb(163, 159, 159),inset -5px -5px 10px rgb(228, 222, 222);
-    /* margin: auto 0; */
+    box-shadow: inset 5px 5px 10px grey,inset -5px -5px 10px grey;
 }
 .lien{
     font-size: 1rem;
